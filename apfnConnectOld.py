@@ -22,20 +22,3 @@ def tentarRede(lan, rede, senha):
         pass
     
 
-'''
-classe usada como estrutura para guardar a lista de redes
-'''
-class Redes:
-    import json
-    redes = {}
-    size = 0
-
-    def __init__(self):
-        self.redes[0] = {'wifi': 'apfn', 'pasw': 'elevel12'}
-        self.redes[1] = {'wifi': 'nmdn', 'pasw': 'nmdn.691'}
-        self.redes[2] = {'wifi': 'Jaques', 'pasw': 'Harien22'}
-        #self.redes[3] = {'wifi': 'x', 'pasw': 'y'}
-    
-    def salvarRedes():
-        with open('./redes.txt', 'w') as f: f.write(data)
-        
