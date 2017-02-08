@@ -2,7 +2,7 @@ def connectar():
     import network
     wlan = network.WLAN(network.STA_IF)
     wlan.active(True)
-    if not lan.isconnected():
+    if not wlan.isconnected():
         tentarRede(rede, senha)
 
 
