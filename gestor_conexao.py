@@ -5,9 +5,10 @@ def connect():
     
     wlan = network.WLAN(network.STA_IF)
     wlan.active(True)
-    gestor = GestorRedes()
+    gestorRedes = GestorRedes()
     if not wlan.isconnected():
-        tentarRede(wlan, 'x', 's')
+        for each in gestorRedes.obter_redes():
+            tentarRede(wlan, each['addr'], each['pasw'])
 
 def inverterFlag(flag):
     flag = not flag
